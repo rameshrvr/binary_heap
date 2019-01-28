@@ -11,25 +11,25 @@ This library provides the below Heap specific functions.
 
 install from pypi using pip
 ```
- pip install binary_heap
+ $ pip install binary_heap
 ```
 
 or easy_install
 ```
- easy_install binary_heap
+ $ easy_install binary_heap
 ```
 
 or install from source using
 ```
- git clone https://github.com/rameshrvr/binary_heap.git
- cd binary_heap
- pip install .
+ $ git clone https://github.com/rameshrvr/binary_heap.git
+ $ cd binary_heap
+ $ pip install .
 ```
 
 ### Tutorial
 
 1. Min Heap (Heap where the data in parent node is lesser than the data in child node)
-```
+```python
 Rameshs-MBP-ead8:binary_heap rameshrv$ python3
 Python 3.7.2 (default, Dec 27 2018, 07:35:06) 
 [Clang 10.0.0 (clang-1000.11.45.5)] on darwin
@@ -57,7 +57,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 2. Max Heap (Heap where the data in parent node is greater than the data in child node)
-```
+```python
 Rameshs-MBP-ead8:binary_heap rameshrv$ python3
 Python 3.7.2 (default, Dec 27 2018, 07:35:06) 
 [Clang 10.0.0 (clang-1000.11.45.5)] on darwin
