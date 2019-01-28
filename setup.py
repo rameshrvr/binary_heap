@@ -5,10 +5,10 @@ from setuptools import setup
 
 setup(
     name='binary_heap',
-    version='1.0.0',
+    version='1.0.1',
     description='Python functions for working with Binary Heap',
     keywords='binary-heap heap python-heap min-heap max-heap',
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
 
     author='Ramesh RV',
     author_email='rameshrvr@outlook.com',
