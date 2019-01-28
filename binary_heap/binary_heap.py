@@ -28,8 +28,6 @@ class BinaryHeap():
             self._heapify(index=index, size=size)
 
     def swim_up(self, index):
-        if index == 1:
-            return
         self._swim_up(index=index)
 
     def get_root_value(self):

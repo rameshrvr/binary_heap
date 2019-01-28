@@ -53,6 +53,8 @@ class MinHeap(BinaryHeap):
             consider elements 2,3 are in respective index 2,3 the parrent node
             will be (children_idex/2) - 1 = (2-1) - 1 => 0
         """
+        if index == 1:
+            return
         parent = (index // 2)
         if self.heap[parent - 1] < self.heap[index - 1]:
             return

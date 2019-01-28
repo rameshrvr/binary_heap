@@ -53,8 +53,10 @@ class MaxHeap(BinaryHeap):
             consider elements 5,4 are in respective index 2,3 the parrent node
             will be (children_idex/2) - 1 = (2-1) - 1 => 0
         """
+        if index == 1:
+            return
         parent = (index // 2)
         if self.heap[parent - 1] > self.heap[index - 1]:
             return
-        self._swap(parent, index - 1)
+        self._swap(parent - 1, index - 1)
         self._swim_up(index=parent)
