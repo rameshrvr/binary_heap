@@ -38,6 +38,17 @@ class MinHeap(BinaryHeap):
         """
         return self.get_root_value()
 
+    def delete_element_at_index(self, index):
+        """
+        Remove the element at the specified index
+        """
+        if index >= self.length():
+            return
+
+        self.heap[index] = float("-inf")
+        self.swim_up(index + 1)
+        self.extract_root()
+
     def _swim_up(self, index):
         """
         Method to swim up if the children are smaller the root
