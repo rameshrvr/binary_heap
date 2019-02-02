@@ -68,10 +68,11 @@ class BinaryHeap():
             value: The value to be searched in the heap
         Return:
              Returns the index if the value is found otherwise -1
-             Note: if same element is present multiple times, first occurring index is returned
+             Note: if same element is present multiple times,
+                   first occurring index is returned
         """
         size = self.length()
-        for index in range(0,size):
+        for index in range(0, size):
             if self.heap[index] == value:
                 return index
 

@@ -11,15 +11,14 @@ class TestMinHeap(TestCase):
         min_heap = MinHeap(self.array)
         length = min_heap.length()
         elements = min_heap.elements()
-        for i in range(0,length):
+        for i in range(0, length):
             current_value = elements[i]
             left_index = (2 * i) + 1
             right_index = (2 * i) + 2
             if left_index <= length-1:
-                self.assertLessEqual(current_value,elements[left_index])
+                self.assertLessEqual(current_value, elements[left_index])
             if right_index <= length-1:
-                self.assertLessEqual(current_value,elements[right_index])
-
+                self.assertLessEqual(current_value, elements[right_index])
 
     def test_min_heap_count_and_elements(self):
         min_heap = MinHeap(self.array)
@@ -80,14 +79,14 @@ class TestMaxHeap(TestCase):
         max_heap = MaxHeap(self.array)
         length = max_heap.length()
         elements = max_heap.elements()
-        for i in range(0,length):
+        for i in range(0, length):
             current_value = elements[i]
             left_index = (2 * i) + 1
             right_index = (2 * i) + 2
-            if left_index <= length-1:
-                self.assertGreaterEqual(current_value,elements[left_index])
-            if right_index <= length-1:
-                self.assertGreaterEqual(current_value,elements[right_index])
+            if left_index <= length - 1:
+                self.assertGreaterEqual(current_value, elements[left_index])
+            if right_index <= length - 1:
+                self.assertGreaterEqual(current_value, elements[right_index])
 
     def test_max_heap_count_and_elements(self):
         max_heap = MaxHeap(self.array)
