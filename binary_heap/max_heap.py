@@ -32,12 +32,6 @@ class MaxHeap(BinaryHeap):
                 if left_index < size // 2:
                     self._heapify(left_index, size)
 
-    def get_max(self):
-        """
-        Return max value from heap
-        """
-        return self.get_root_value()
-
     def delete_element_at_index(self, index):
         """
         Remove the element at the specified index
