@@ -1,8 +1,8 @@
 Binary Heap
 ###########
 
-.. image:: https://img.shields.io/badge/pypi-0.2.12-green.svg
-  :target: https://pypi.python.org/pypi/nested-lookup
+.. image:: https://img.shields.io/badge/pypi-1.0.2-green.svg
+  :target: https://pypi.org/project/binary-heap/
 
 
 Python library which helps in forming Binary Heaps (Min, Max) using list data structure.
