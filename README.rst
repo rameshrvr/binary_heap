@@ -3,6 +3,8 @@ Binary Heap
 
 .. image:: https://img.shields.io/badge/binary_heap-1.0.2-green.svg
   :target: https://pypi.org/project/binary-heap/
+.. image:: https://travis-ci.org/rameshrvr/binary_heap.svg?branch=master
+    :target: https://travis-ci.org/rameshrvr/binary_heap
 
 
 Python library which helps in forming Binary Heaps (Min, Max) using list data structure.
