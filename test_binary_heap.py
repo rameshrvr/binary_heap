@@ -15,9 +15,9 @@ class TestMinHeap(TestCase):
             current_value = elements[i]
             left_index = (2 * i) + 1
             right_index = (2 * i) + 2
-            if left_index <= length-1:
+            if left_index <= length - 1:
                 self.assertLessEqual(current_value, elements[left_index])
-            if right_index <= length-1:
+            if right_index <= length - 1:
                 self.assertLessEqual(current_value, elements[right_index])
 
     def test_min_heap_count_and_elements(self):
