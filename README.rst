@@ -1,7 +1,7 @@
 Binary Heap
 ###########
 
-.. image:: https://img.shields.io/badge/pypi-1.0.2-green.svg
+.. image:: https://img.shields.io/badge/binary_heap-1.0.2-green.svg
   :target: https://pypi.org/project/binary-heap/
 
 
@@ -29,6 +29,11 @@ This library provides the below Heap specific functions.
 	Remove the element at the specified index and reform the Heap
 
 
+For example function invocations, plesae see the tutorial.
+
+.. contents::
+
+
 Installation
 ============
 
@@ -45,11 +50,6 @@ or install from source using::
 	$ git clone https://github.com/rameshrvr/binary_heap.git
 	$ cd binary_heap
 	$ pip install .
-
-
-For example function invocations, plesae see the tutorial.
-
-.. contents::
 
 
 Tutorial
