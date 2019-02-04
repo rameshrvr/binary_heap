@@ -1,8 +1,11 @@
+import copy
 
 
 class BinaryHeap():
     def __init__(self, heap):
-        self.heap = heap
+        self.heap = copy.deepcopy(heap)
+        if self.heap:
+            self.heapify()
 
     def elements(self):
         """

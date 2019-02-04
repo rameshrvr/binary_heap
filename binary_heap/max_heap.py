@@ -3,9 +3,7 @@ from binary_heap import BinaryHeap
 
 class MaxHeap(BinaryHeap):
     def __init__(self, heap=[]):
-        self.heap = heap
-        if self.heap:
-            self.heapify()
+        super(self.__class__, self).__init__(heap=heap)
 
     def _heapify(self, index, size):
         """
