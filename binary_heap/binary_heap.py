@@ -1,7 +1,7 @@
 import copy
 
 
-class BinaryHeap():
+class BinaryHeap(object):
     def __init__(self, heap):
         self.heap = copy.deepcopy(heap)
         if self.heap:
