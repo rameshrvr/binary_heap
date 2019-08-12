@@ -1,7 +1,7 @@
 Binary Heap
 ###########
 
-.. image:: https://img.shields.io/badge/binary_heap-1.0.2-green.svg
+.. image:: https://img.shields.io/badge/binary_heap-1.0.4-green.svg
   :target: https://pypi.org/project/binary-heap/
 .. image:: https://travis-ci.org/rameshrvr/binary_heap.svg?branch=master
     :target: https://travis-ci.org/rameshrvr/binary_heap
@@ -9,6 +9,9 @@ Binary Heap
 
 Python library which helps in forming Binary Heaps (Min, Max) using list data structure.
 This library provides the below Heap specific functions.
+
+*heap_sort*
+	Sort the given list of elements using Heap Sort Algorithm
 
 *heapify*
 	Convert list of elements to Heap data structure (MinHeap/MaxHeap)
@@ -57,11 +60,30 @@ or install from source using::
 Tutorial
 ========
 
-1. Min Heap (Heap where the data in parent node is lesser than the data in child node)
+1. Heap Sort (Sort the list using heap sort algorithm)
+
+.. code-block:: python
+
+	Rameshs-MBP:binary_heap ramesh_rv$ python3
+	Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 26 2018, 23:26:24) 
+	[Clang 6.0 (clang-600.0.57)] on darwin
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>>
+	>>> from binary_heap import heap_sort
+	>>>
+	>>> data = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
+	>>>
+	>>> heap_sort(data)  # Returns sorted list
+	[1, 2, 3, 4, 7, 8, 9, 10, 14, 16]
+	>>> 
+
+
+
+2. Min Heap (Heap where the data in parent node is lesser than the data in child node)
 
 .. code-block:: python
 	
-	Rameshs-MBP-ead8:binary_heap rameshrv$ python3
+	Rameshs-MBP:binary_heap rameshrv$ python3
 	Python 3.7.2 (default, Dec 27 2018, 07:35:06) 
 	[Clang 10.0.0 (clang-1000.11.45.5)] on darwin
 	Type "help", "copyright", "credits" or "license" for more information.
@@ -109,11 +131,11 @@ Tutorial
 
 
 
-2. Max Heap (Heap where the data in parent node is greater than the data in child node)
+3. Max Heap (Heap where the data in parent node is greater than the data in child node)
 
 .. code-block:: python
 
-	Rameshs-MBP-ead8:binary_heap rameshrv$ python3
+	Rameshs-MBP:binary_heap rameshrv$ python3
 	Python 3.7.2 (default, Dec 27 2018, 07:35:06) 
 	[Clang 10.0.0 (clang-1000.11.45.5)] on darwin
 	Type "help", "copyright", "credits" or "license" for more information.

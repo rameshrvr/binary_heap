@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from binary_heap import MinHeap, MaxHeap
+from binary_heap import MinHeap, MaxHeap, heap_sort
 
 
 class TestMinHeap(TestCase):
@@ -138,3 +138,18 @@ class TestMaxHeap(TestCase):
         self.assertEqual(11, max_heap.extract_root())
         self.assertEqual([8, 6, 6, 5, 3, 4, 5], max_heap.elements())
         self.assertEqual([3, 4, 5, 5, 6, 6, 8], sorted(max_heap.elements()))
+
+
+class TestHeapSort(TestCase):
+    def setUp(self):
+        self.array1 = [4, 3, 6, 8, 11]
+        self.array2 = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
+
+    def test_sorted_value_of_array1(self):
+        self.assertEqual([3, 4, 6, 8, 11], heap_sort(self.array1))
+
+    def test_sorted_value_of_array2(self):
+        self.assertEqual(
+            [1, 2, 3, 4, 7, 8, 9, 10, 14, 16],
+            heap_sort(self.array2)
+        )
