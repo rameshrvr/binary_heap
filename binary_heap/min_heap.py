@@ -14,21 +14,16 @@ class MinHeap(BinaryHeap):
             index: Index to start
             size: Size of the array
         """
-        left_index = self._left_child_index(index)
-        if (size - 1) - left_index == 0:
-            if self.heap[left_index] < self.heap[index]:
-                self._swap(index, left_index)
-        else:
-            right_index = left_index + 1
-            if self.heap[right_index] < self.heap[left_index] \
-                    and self.heap[right_index] < self.heap[index]:
-                self._swap(index, right_index)
-                if right_index < size // 2:
-                    self._heapify(right_index, size)
-            elif self.heap[left_index] < self.heap[index]:
-                self._swap(index, left_index)
-                if left_index < size // 2:
-                    self._heapify(left_index, size)
+        l_index = self._left_child_index(index)
+        r_index = self._right_child_index(index)
+        largest_index = index
+        if l_index < size and self.heap[l_index] < self.heap[index]:
+            largest_index = l_index
+        if r_index < size and self.heap[r_index] < self.heap[largest_index]:
+            largest_index = r_index
+        if largest_index != index:
+            self._swap(largest_index, index)
+            self._heapify(largest_index, size)
 
     def delete_element_at_index(self, index):
         """

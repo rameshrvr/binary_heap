@@ -5,9 +5,9 @@ from setuptools import setup
 
 setup(
     name='binary_heap',
-    version='1.0.3',
+    version='1.0.4',
     description='Python functions for working with Binary Heap',
-    keywords='binary-heap heap python-heap min-heap max-heap',
+    keywords='binary-heap heap python-heap min-heap max-heap heap-sort',
     long_description=open('README.rst').read(),
 
     author='Ramesh RV',
