@@ -153,3 +153,14 @@ class TestHeapSort(TestCase):
             [1, 2, 3, 4, 7, 8, 9, 10, 14, 16],
             heap_sort(self.array2)
         )
+
+    def test_reverse_sort_array1(self):
+        self.assertEqual(
+            [11, 8, 6, 4, 3], heap_sort(data=self.array1, reverse=True)
+        )
+
+    def test_reverse_sort_array2(self):
+        self.assertEqual(
+            [16, 14, 10, 9, 8, 7, 4, 3, 2, 1],
+            heap_sort(data=self.array2, reverse=True)
+        )

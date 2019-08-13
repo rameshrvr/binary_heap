@@ -73,8 +73,11 @@ Tutorial
 	>>>
 	>>> data = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
 	>>>
-	>>> heap_sort(data)  # Returns sorted list
+	>>> heap_sort(data)  # Returns sorted list in ascending order
 	[1, 2, 3, 4, 7, 8, 9, 10, 14, 16]
+	>>> 
+	>>> heap_sort(data, reverse=True)  # Returns sorted list in decsnding order
+	[16, 14, 10, 9, 8, 7, 4, 3, 2, 1]
 	>>> 
 
 

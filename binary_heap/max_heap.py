@@ -1,30 +1,6 @@
 from binary_heap import BinaryHeap
 
 
-def heap_sort(data):
-    """
-    Method to sort the list of integers using heap sort Algorithm
-    Args:
-        data: list of integers to be sorted
-    Return:
-        list of sorted integers
-    """
-    # Create a Max heap object
-    heap_obj = MaxHeap(data)
-    size = heap_obj.length()
-    # Iterate elements from n to 1 (0 based indexing)
-    for index in reversed(range(1, (size))):
-        # In Max heap largest elemnt will be in root. So swap
-        # the root element with last element of heap
-        heap_obj._swap(index, 0)
-        # Reduce the heap size by 1
-        size -= 1
-        # Swim down the root element to its heap position (heapify)
-        heap_obj._heapify(index=0, size=size)
-    # Now the heap has sorted elements
-    return heap_obj.elements()
-
-
 class MaxHeap(BinaryHeap):
     def __init__(self, heap=[]):
         super(self.__class__, self).__init__(heap=heap)
